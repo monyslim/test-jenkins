@@ -29,6 +29,10 @@ pipeline {
                         
                         sudo systemctl enable nginx
                         
+                        cd /var
+
+                        mkdir www
+
                         cd /var/www
 
                         sudo chown -R jenkins:jenkins wwww/
