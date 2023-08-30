@@ -33,7 +33,7 @@ pipeline {
                         
                         sudo rm -rf www
 
-                        mkdir www
+                        sudo mkdir www
 
                         sudo chown -R jenkins:jenkins wwww/*
 
