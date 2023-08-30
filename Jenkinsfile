@@ -22,21 +22,28 @@ pipeline {
 
         stage("host website"){
             steps{
-                sh """
+                sh  '''
+                        sudo apt-get install nginx -y
+                        
+                        sudo systemctl enable nginx
+                        
+                        sudo systemctl enable nginx
+                        
+                        cd /var/www
 
-                    cd /var/www
+                        rm -rf html 
 
-                    rm -rf html 
+                        mkdir html
 
-                    mkdir html
+                        sudo chown -R jenkins:jenkins html/
+                        
+                        cd html
 
-                    cd html
-
-                    git clone https://github.com/theoafactor/simple_personal_devops.git .
+                        git clone https://github.com/monyslim/test-jenkins.git .
 
                     
 
-                    """
+                    '''
 
             }
         }
