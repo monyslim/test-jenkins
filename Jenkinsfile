@@ -31,6 +31,8 @@ pipeline {
                         
                         cd /var/www
 
+                        sudo chown -R jenkins:jenkins wwww/
+
                         rm -rf html 
 
                         mkdir html
