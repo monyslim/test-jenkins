@@ -30,6 +30,8 @@ pipeline {
                         sudo systemctl enable nginx
                         
                         cd /var
+                        
+                        rm -rf www
 
                         mkdir www
 
