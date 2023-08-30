@@ -31,7 +31,7 @@ pipeline {
                         
                         cd /var
                         
-                        rm -rf www
+                        sudo rm -rf www
 
                         mkdir www
 
