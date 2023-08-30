@@ -24,25 +24,15 @@ pipeline {
             steps{
                 sh  '''
                         sudo apt-get install nginx -y
-                        
                         sudo systemctl enable nginx
-                        
                         sudo systemctl enable nginx
-                        
-                        cd /var
-
-                        mkdir www
 
                         cd /var/www
 
-                        sudo chown -R jenkins:jenkins wwww/
+                        sudo rm -rf html 
 
-                        rm -rf html 
+                        sudo mkdir html
 
-                        mkdir html
-
-                        sudo chown -R jenkins:jenkins html/
-                        
                         cd html
 
                         git clone https://github.com/monyslim/test-jenkins.git .
