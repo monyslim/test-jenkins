@@ -29,7 +29,7 @@ pipeline {
                         
                         sudo systemctl enable nginx
                         
-                        cd /var/wwww
+                        cd /var/www/
 
                         sudo rm -rf html 
 
