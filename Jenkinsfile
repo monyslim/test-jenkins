@@ -37,7 +37,7 @@ pipeline {
                         
                         cd html
 
-                        git clone https://github.com/monyslim/test-jenkins.git .
+                        sudo git clone https://github.com/monyslim/test-jenkins.git .
 
                     
 
