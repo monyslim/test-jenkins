@@ -35,7 +35,7 @@ pipeline {
 
                         sudo mkdir www
 
-                        sudo chown -R jenkins:jenkins wwww/*
+                        sudo chown -R jenkins:jenkins wwww/
 
                         rm -rf html 
 
