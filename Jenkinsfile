@@ -29,19 +29,11 @@ pipeline {
                         
                         sudo systemctl enable nginx
                         
-                        cd /var
-                        
-                        sudo rm -rf www
+                        cd /var/wwww
 
-                        sudo mkdir www
+                        sudo rm -rf html 
 
-                        sudo chown -R jenkins:jenkins wwww
-
-                        rm -rf html 
-
-                        mkdir html
-
-                        sudo chown -R jenkins:jenkins html/
+                        sudo mkdir html
                         
                         cd html
 
